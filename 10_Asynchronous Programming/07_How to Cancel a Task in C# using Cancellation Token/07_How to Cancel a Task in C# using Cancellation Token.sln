@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34309.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_How to Cancel a Task in C# using Cancellation Token", "07_How to Cancel a Task in C# using Cancellation Token\07_How to Cancel a Task in C# using Cancellation Token.csproj", "{2556AE43-455D-4BDA-AC4B-099B1C80369C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2556AE43-455D-4BDA-AC4B-099B1C80369C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2556AE43-455D-4BDA-AC4B-099B1C80369C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2556AE43-455D-4BDA-AC4B-099B1C80369C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2556AE43-455D-4BDA-AC4B-099B1C80369C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE4F5442-D594-4E03-8771-15D9F5312B0C}
+	EndGlobalSection
+EndGlobal
