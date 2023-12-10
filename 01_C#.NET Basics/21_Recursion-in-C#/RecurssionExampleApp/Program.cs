@@ -25,6 +25,13 @@ class Program
         }
 
         Console.WriteLine('\n' + new string('=', 100) + '\n');
+        Console.WriteLine("**********Factorial of Number**********");
+        Console.WriteLine("=======================================");
+
+        {
+            int x = 5;
+            Console.WriteLine($"Factorial of {x} is: {GetFactorial(x)}");
+        }
 
         Console.ReadKey();
     }
@@ -62,6 +69,18 @@ class Program
         {
             Console.Write($"{n} ");
             PrintValue(n - 1);
+        }
+    }
+
+    private static int GetFactorial(int num)
+    {
+        if (num == 1)
+        {
+            return 1;
+        }
+        else
+        {
+            return num * GetFactorial(num - 1);
         }
     }
 }
