@@ -4,6 +4,9 @@ public class AssemblyOneClass1
     private int _id;
     public int publicId;
     protected int protectedId;
+    internal int internalId;
+    protected internal int protectedInternalId;
+    private protected int privateProtectedId;
 
     public void Display()
     {
@@ -16,6 +19,15 @@ public class AssemblyOneClass1
 
         // protected Members Accessible with the Containing Type where they are created
         Console.WriteLine(protectedId);
+
+        // Internal Members Accessible with the Containing Type where they are created
+        Console.WriteLine(internalId);
+
+        // Protected internal Members Accessible with the Containing Type where they are created
+        Console.WriteLine(protectedInternalId);
+
+        // Private Protected Members Accessible with the Containing Type where they are created
+        Console.WriteLine(privateProtectedId);
     }
 }
 
@@ -32,6 +44,15 @@ public class AssemblyOneClass2 : AssemblyOneClass1
 
         // We Can access protected Member from Derived Classes within the Same Assembly
         Console.WriteLine(protectedId);
+
+        // We can access internal Members from Derived Classes within the Same Assembly
+        Console.WriteLine(internalId);
+
+        // We can access protected internal Member from Derived Classes within the Same Assembly
+        Console.WriteLine(protectedInternalId);
+
+        // We can access Private Protected Member from Derived Classes within the Same Assembly
+        Console.WriteLine(privateProtectedId);
     }
 }
 
@@ -50,5 +71,14 @@ public class AssemblyOneClass3
 
         // We Cannot access protected Member from Non-Derived Classes within the Same Assembly
         // Console.WriteLine(obj.protectedId);              // Compile error
+
+        // We can access internal Members from Non-Derived Classes within the Same Assembly
+        Console.WriteLine(obj.internalId);
+
+        // We can access protected internal Member from Non-Derived Classes within the Same Assembly
+        Console.WriteLine(obj.protectedInternalId);
+
+        // We cannot access Private Protected Member from Non-Derived Classes within the Same Assembly
+        // Console.WriteLine(obj.privateProtectedId);       // Compile error
     }
 }
